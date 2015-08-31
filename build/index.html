@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Apps</title>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <base href="/">
+  </head>
+  <body>
+    <div class="grid-frame">
+      <div class="align-spaced grid-block">
+        <div class="grid-block large-3 vertical">
+          <div class="align-center grid-block title shrink">
+            <a ui-sref="home"><h1>Dylan Zincone</h1></a>
+          </div>
+            <div class="align-center grid-block links horizontal shrink">
+              <a href="#"><i class="fa fa-github"></i> Github</a>
+              <a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+              <a href="#">Galvanize</a>
+            </div>
+            <div class="grid-block menu">
+
+          <div class="text-center grid-content">
+            <ul>
+              <a ui-sref="about-me"><li class="top-link">Who Am I?</li></a>
+              <a ui-sref="resume"><li>Resume</li></a>
+              <a ui-sref="portfolio"><li>Portfolio Site</li></a>
+              <a ui-sref="capstone"><li>Capstone</li></a>
+              <a ui-sref="lyne-up"><li>Lyne Up</li></a>
+              <a ui-sref="galvanize-ping-pong"><li>Galvanize Ping Pong</li></a>
+              <a ui-sref="fun-finder"><li>Fun Finder</li></a>
+              <a zf-toggle="contactMe" ui-sref="#"><li>Contact Me</li></a>
+            </ul>
+
+          </div>
+          </div>
+        </div>
+        <div class="grid-block large-9">
+            <div class="ui-view large-12">
+
+            </div>
+        </div>
+      </div>
+      <div zf-modal="" id="contactMe" class="collapse">
+        <div class="grid-block vertical">
+          <div class="primary title-bar">
+            <div class="center title">Contact Me</div>
+            <span zf-close="" class="right"><a>Cancel</a></span>
+          </div>
+          <div class="grid-content padding" style="padding-top: 1rem;">
+            <p>
+              <label>Name</label>
+              <input type="text">
+              <br>
+              <label>Email</label>
+              <input type="email">
+            </p>
+            <a zf-close="" class="button">OK</a>
+            <a zf-close="" class="button">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
