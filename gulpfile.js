@@ -22,7 +22,8 @@ var paths = {
   assets: [
     './client/**/*.*',
     '!./client/templates/**/*.*',
-    '!./client/assets/{scss,js}/**/*.*'
+    '!./client/assets/{scss,js}/**/*.*',
+    './client/assets/img/*.*'
   ],
   // Sass will check these folders for files when you use @import.
   sass: [
@@ -45,7 +46,8 @@ var paths = {
   // These files are for your app's JavaScript
   appJS: [
     'client/assets/js/app.js'
-  ]
+  ],
+
 }
 
 // 3. TASKS
@@ -58,6 +60,7 @@ gulp.task('clean', function(cb) {
 
 // Copies everything in the client folder except templates, Sass, and JS
 gulp.task('copy', function() {
+  console.log("hello");
   return gulp.src(paths.assets, {
     base: './client/'
   })
@@ -75,6 +78,7 @@ gulp.task('copy:templates', function() {
     .pipe(gulp.dest('./build/templates'))
   ;
 });
+
 
 // Compiles the Foundation for Apps directive partials into a single JavaScript file
 gulp.task('copy:foundation', function(cb) {
@@ -141,11 +145,12 @@ gulp.task('uglify:app', function() {
   ;
 });
 
+
 // Starts a test server, which you can view at http://localhost:8079
 gulp.task('server', ['build'], function() {
   gulp.src('./build')
     .pipe($.webserver({
-      port: 8079,
+      port: 8080,
       host: 'localhost',
       fallback: 'index.html',
       livereload: true,
@@ -160,7 +165,7 @@ gulp.task('build', function(cb) {
 });
 
 // Default task: builds your app, starts a server, and recompiles assets when they change
-gulp.task('default', ['server'], function () {
+gulp.task('default', ['build', 'server'], function () {
   // Watch Sass
   gulp.watch(['./client/assets/scss/**/*', './scss/**/*'], ['sass']);
 
@@ -168,7 +173,7 @@ gulp.task('default', ['server'], function () {
   gulp.watch(['./client/assets/js/**/*', './js/**/*'], ['uglify:app']);
 
   // Watch static files
-  gulp.watch(['./client/**/*.*', '!./client/templates/**/*.*', '!./client/assets/{scss,js}/**/*.*'], ['copy']);
+  gulp.watch(['./client/**/*.*', '!./client/templates/**/*.*', '!./client/assets/{scss,js}/**/*.*', './client/assets/img/*.*'],  ['copy']);
 
   // Watch app templates
   gulp.watch(['./client/templates/**/*.html'], ['copy:templates']);

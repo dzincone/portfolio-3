@@ -22,20 +22,24 @@
             <div class="align-center grid-block links horizontal shrink">
               <a href="#"><i class="fa fa-github"></i> Github</a>
               <a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-              <a href="#">Galvanize</a>
+              <a href="#"><i class="fa fa-university"></i> Galvanize</a>
             </div>
             <div class="grid-block menu">
 
           <div class="text-center grid-content">
             <ul>
-              <a ui-sref="about-me"><li class="top-link">Who Am I?</li></a>
-              <a ui-sref="resume"><li>Resume</li></a>
-              <a ui-sref="portfolio"><li>Portfolio Site</li></a>
-              <a ui-sref="capstone"><li>Capstone</li></a>
-              <a ui-sref="lyne-up"><li>Lyne Up</li></a>
-              <a ui-sref="galvanize-ping-pong"><li>Galvanize Ping Pong</li></a>
-              <a ui-sref="fun-finder"><li>Fun Finder</li></a>
-              <a zf-toggle="contactMe" ui-sref="#"><li>Contact Me</li></a>
+              <a ui-sref="about-me"><li class="top-link" ui-sref-active="is-active">Who Am I?</li></a>
+              <a ui-sref="resume"><li ui-sref-active="is-active">Resume</li></a>
+              <zf-accordion auto-open="false">
+                <zf-accordion-item title="Projects">
+                  <a ui-sref="portfolio"><li>Portfolio Site</li></a>
+                  <a ui-sref="capstone"><li>Capstone</li></a>
+                  <a ui-sref="lyne-up"><li>Lyne Up</li></a>
+                  <a ui-sref="galvanize-ping-pong"><li>Galvanize Ping Pong</li></a>
+                  <a ui-sref="fun-finder"><li>Fun Finder</li></a>
+                </zf-accordion-item>
+              </zf-accordion>
+              <a zf-toggle="contactMe" ui-sref="#"><li ui-sref-active="is-active">Contact Me</li></a>
             </ul>
 
           </div>
