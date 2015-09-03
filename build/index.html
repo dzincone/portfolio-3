@@ -14,38 +14,24 @@
   </head>
   <body>
     <div class="grid-frame">
-      <div class="align-spaced grid-block">
-        <div class="grid-block large-3 vertical">
+      <div class="align-left grid-block">
+        <div class="grid-block large-3 vertical shrink">
           <div class="align-center grid-block title shrink">
-            <a ui-sref="home"><h1>Dylan Zincone</h1></a>
+            <a ui-sref="home"><h1>Home</h1></a>
           </div>
-            <div class="align-center grid-block links horizontal shrink">
-              <a href="#"><i class="fa fa-github"></i> Github</a>
-              <a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-              <a href="#"><i class="fa fa-university"></i> Galvanize</a>
-            </div>
             <div class="grid-block menu">
-
-          <div class="text-center grid-content">
-            <ul>
-              <a ui-sref="about-me"><li class="top-link" ui-sref-active="is-active">Who Am I?</li></a>
-              <a ui-sref="resume"><li ui-sref-active="is-active">Resume</li></a>
-              <zf-accordion auto-open="false">
-                <zf-accordion-item title="Projects">
-                  <a ui-sref="portfolio"><li>Portfolio Site</li></a>
-                  <a ui-sref="capstone"><li>Capstone</li></a>
-                  <a ui-sref="lyne-up"><li>Lyne Up</li></a>
-                  <a ui-sref="galvanize-ping-pong"><li>Galvanize Ping Pong</li></a>
-                  <a ui-sref="fun-finder"><li>Fun Finder</li></a>
-                </zf-accordion-item>
-              </zf-accordion>
-              <a zf-toggle="contactMe" ui-sref="#"><li ui-sref-active="is-active">Contact Me</li></a>
-            </ul>
-
-          </div>
-          </div>
+              <div class="text-center grid-content">
+                <ul>
+                  <a ui-sref="portfolio" ui-sref-active="is-active"><li class="top-link"><i class="fa fa-desktop"></i> Portfolio Site</li></a>
+                  <a ui-sref="capstone" ui-sref-active="is-active"><li><i class="fa fa-desktop"></i> Capstone</li></a>
+                  <a ui-sref="lyne-up" ui-sref-active="is-active"><li><i class="fa fa-desktop"></i> Lyne Up</li></a>
+                  <a ui-sref="galvanize-ping-pong" ui-sref-active="is-active"><li><i class="fa fa-desktop"></i> Galvanize Ping Pong</li></a>
+                  <a ui-sref="fun-finder" ui-sref-active="is-active"><li><i class="fa fa-desktop"></i> Fun Finder</li></a>
+                </ul>
+              </div>
+            </div>
         </div>
-        <div class="grid-block large-9">
+        <div class="grid-block">
             <div class="ui-view large-12">
 
             </div>

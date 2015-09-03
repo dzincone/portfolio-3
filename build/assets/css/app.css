@@ -6406,46 +6406,29 @@ body, html {
 .grid-content {
   padding: 0; }
 
-.accordion {
-  background-color: #F89406;
-  border: none;
-  margin: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #356AC3; }
-
-.is-active > .accordion-title {
-  background-color: #F89406;
-  color: white; }
-
-.accordion:hover {
-  background-color: #F89406; }
-
-.accordion-content {
-  background-color: #F89406; }
-
-.accordion-title {
-  line-height: 1.4em;
-  font-size: 1.4em;
-  margin: 0;
-  padding: 0;
-  color: none;
-  background: none;
-  padding: none;
-  color: #fff; }
-
-.accordion-title:hover {
-  background-color: #356AC3; }
-
-.accordion-title:hover {
-  background: none; }
-
 .grid-block.home {
   height: 100vh;
-  background-image: url("https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/11921882_10206387703565673_3749716728659458376_n.jpg?oh=78c525879bdaa52e6981937b83610695&oe=56802F20");
+  background-image: url("./../img/night.png");
   background-size: cover; }
   .grid-block.home h1, .grid-block.home p, .grid-block.home h3 {
     color: white; }
+  .grid-block.home h1.home-title {
+    font-size: 5em; }
+
+.grid-block.main {
+  padding-left: 40px;
+  padding-right: 40px; }
+  .grid-block.main p {
+    font-size: 1.3em; }
+
+.grid-block.content {
+  margin-top: 70px; }
+
+li.top-link.is-active {
+  background-color: #F89406; }
+
+.grid-content a.is-active li {
+  background-color: #F89406; }
 
 .grid-block.about {
   margin-top: 20px;
@@ -6491,22 +6474,26 @@ body, html {
   height: 100vh; }
 
 .grid-block.links {
-  background-color: #4285F4;
   padding-bottom: 20px;
-  padding-top: 10px; }
+  padding-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.35);
+  margin-left: 300px;
+  margin-right: 300px; }
 
 .grid-block.links a {
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #115CA0;
-  font-size: 1.2em; }
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #F89406;
+  font-size: 1.4em; }
 
 .grid-block.links a:hover {
   color: white; }
 
 .grid-block.title h1 {
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.8em; }
 
 .grid-content ul {
   list-style: none;
@@ -6514,7 +6501,7 @@ body, html {
   padding: 0; }
 
 .grid-content li {
-  background-color: #4285F4;
+  background-color: #283548;
   padding-top: 15px;
   padding-bottom: 15px;
   color: white;
@@ -6525,20 +6512,51 @@ body, html {
   background-color: #356AC3; }
 
 .grid-block.title {
-  background-color: #4285F4;
+  background-color: #283548;
   color: white; }
 
 .grid-block.menu {
-  background-color: #4285F4; }
+  background-color: #283548; }
 
 li.top-link {
   border-top: 2px solid #356AC3; }
 
 .title-bar.primary {
-  background-color: #4285F4; }
+  background-color: #283548; }
 
 .button {
-  background-color: #4285F4; }
+  background-color: #283548; }
 
 .button:hover {
   background-color: #356AC3; }
+
+a.button.contact {
+  background-color: #356AC3; }
+  a.button.contact:hover {
+    background-color: white;
+    color: #356AC3; }
+
+a.button.portfolio {
+  background-color: #356AC3; }
+  a.button.portfolio:hover {
+    background-color: #F89406; }
+
+.grid-block.portfolio-app {
+  height: 350px;
+  background-image: url("./../img/portfolio.png");
+  background-size: cover; }
+
+.grid-block.lyneup-app {
+  height: 350px;
+  background-image: url("./../img/lyne-up.png");
+  background-size: cover; }
+
+.grid-block.pingpong-app {
+  height: 350px;
+  background-image: url("./../img/ping-pong.png");
+  background-size: cover; }
+
+.grid-block.funfinder-app {
+  height: 350px;
+  background-image: url("./../img/fun-finder.png");
+  background-size: cover; }
