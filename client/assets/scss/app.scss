@@ -20,15 +20,24 @@ body, html {
     font-size: 5em;
   }
 }
+.grid-block.main-home {
+  padding-left: 40px;
+  padding-right: 40px;
+  & p {
+    font-size: 1.4em;
+  }
+}
+
 .grid-block.main {
   padding-left: 40px;
   padding-right: 40px;
   & p {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
+
 .grid-block.content {
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 li.top-link.is-active {
@@ -102,7 +111,7 @@ li.top-link.is-active {
   padding-left: 25px;
   padding-right: 25px;
   color: #F89406;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .grid-block.links a:hover {
@@ -124,8 +133,9 @@ li.top-link.is-active {
   background-color: #283548;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 20px;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.2em;
   border-bottom: 2px solid #356AC3;
 }
 
@@ -173,25 +183,25 @@ a.button.portfolio {
 }
 
 .grid-block.portfolio-app {
-  height: 350px;
+  height: 300px;
   background-image: url('./../img/portfolio.png');
   background-size: cover;
 }
 
 .grid-block.lyneup-app {
-  height: 350px;
+  height: 300px;
   background-image: url('./../img/lyne-up.png');
   background-size: cover;
 }
 
 .grid-block.pingpong-app {
-  height: 350px;
+  height: 300px;
   background-image: url('./../img/ping-pong.png');
   background-size: cover;
 }
 
 .grid-block.funfinder-app {
-  height: 350px;
+  height: 300px;
   background-image: url('./../img/fun-finder.png');
   background-size: cover;
 }
