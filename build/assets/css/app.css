@@ -381,7 +381,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -5842,9 +5842,9 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+  font-style: bold;
   color: #222;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
@@ -6403,55 +6403,70 @@ body, html {
   margin: 0;
   padding: 0; }
 
+h1 {
+  font-size: 5em;
+  color: #F89406; }
+
+p {
+  color: white; }
+
 .grid-content {
   padding: 0; }
 
+li {
+  padding-right: 15px; }
+
+.ui-view {
+  background-color: #283548; }
+
 .grid-block.home {
   height: 100vh;
-  background-image: url("./../img/night.png");
-  background-size: cover; }
+  background-image: url("./../img/doggy.jpg");
+  background-size: cover;
+  background-position: center 15%; }
   .grid-block.home h1, .grid-block.home p, .grid-block.home h3 {
     color: white; }
   .grid-block.home h1.home-title {
-    font-size: 5em; }
+    font-size: 5em;
+    color: #F89406; }
 
 .grid-block.main-home {
-  padding-left: 40px;
-  padding-right: 40px; }
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgba(38, 52, 73, 0.95);
+  margin-bottom: 20px; }
   .grid-block.main-home p {
     font-size: 1.4em; }
 
-.grid-block.main {
-  padding-left: 40px;
-  padding-right: 40px; }
-  .grid-block.main p {
-    font-size: 1.2em; }
+.grid-block.main p {
+  font-size: 1em; }
 
 .grid-block.content {
   margin-top: 20px; }
 
 li.top-link.is-active {
-  background-color: #F89406; }
+  background-color: #356AC3; }
 
 .grid-content a.is-active li {
-  background-color: #F89406; }
+  background-color: #356AC3; }
 
 .grid-block.about {
   margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
   height: 100vh; }
 
 .grid-block.fun-finder {
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 40px;
+  margin-left: 40px;
   height: 100vh; }
 
 .grid-block.portfolio {
   margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
   height: 100vh; }
 
 .grid-block.capstone {
@@ -6463,27 +6478,35 @@ li.top-link.is-active {
 
 .grid-block.galvanize-ping-pong {
   margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
   height: 100vh; }
 
 .grid-block.lyne-up {
   margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
   height: 100vh; }
 
 .grid-block.resume {
   margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
   height: 100vh; }
+
+.grid-block.keys {
+  margin-bottom: 20px; }
+
+.grid-block.resources {
+  background-color: #3469C1; }
+  .grid-block.resources h2 {
+    color: white; }
 
 .grid-block.links {
   padding-bottom: 20px;
   padding-top: 20px;
   margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(38, 52, 73, 0.95);
   margin-left: 300px;
   margin-right: 300px; }
 
@@ -6507,13 +6530,14 @@ li.top-link.is-active {
   padding: 0; }
 
 .grid-content li {
-  background-color: #283548;
+  background-color: #F89406;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
   color: white;
   font-size: 1.2em;
-  border-bottom: 2px solid #356AC3; }
+  border-bottom: 2px solid #356AC3;
+  border-right: 2px solid #356AC3; }
 
 .grid-content li:hover {
   background-color: #356AC3; }
@@ -6544,29 +6568,35 @@ a.button.contact {
     color: #356AC3; }
 
 a.button.portfolio {
+  margin-bottom: 0;
   background-color: #356AC3; }
   a.button.portfolio:hover {
     background-color: #F89406; }
 
 .grid-block.portfolio-app {
-  height: 300px;
+  height: 280px;
   background-image: url("./../img/portfolio.png");
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 10px;
+  border: 2px solid orange; }
 
 .grid-block.lyneup-app {
-  height: 300px;
+  height: 280px;
   background-image: url("./../img/lyne-up.png");
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 10px; }
 
 .grid-block.pingpong-app {
-  height: 300px;
+  height: 280px;
   background-image: url("./../img/ping-pong.png");
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 10px; }
 
 .grid-block.funfinder-app {
-  height: 300px;
+  height: 280px;
   background-image: url("./../img/fun-finder.png");
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 10px; }
 
 .items p {
-  color: green; }
+  color: white; }
