@@ -6455,6 +6455,9 @@ li {
 .grid-block.main p {
   font-size: 1em; }
 
+.info p {
+  margin-bottom: 10px; }
+
 .grid-block.content {
   margin-top: 20px; }
 
