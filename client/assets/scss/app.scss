@@ -7,6 +7,20 @@ body, html {
   background-color: #283548;
 }
 
+.modal {
+  max-width: 800px;
+}
+
+.grid-content.modal-content {
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+input[type="text"] {
+  margin: 0;
+}
+
 h1 {
   font-size: 5em;
     color: #F89406;
@@ -67,10 +81,14 @@ li {
   margin-top: 80px;
 }
 
-.grid-block.profile-pick {
-    height: 120px;
+.grid-block.profile-pic {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 190px;
+    border-radius: 150px;
     background-image: url('./../img/dylan.png');
     background-size: cover;
+    background-position: 20px;
 
 }
 
@@ -102,14 +120,6 @@ li.top-link.is-active {
   height: 100vh;
 }
 
-.grid-block.capstone{
-  height: 100vh;
-  & h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: black;
-  }
-}
 
 .grid-block.galvanize-ping-pong{
   margin-top: 20px;
@@ -125,7 +135,8 @@ li.top-link.is-active {
   height: 100vh;
 }
 
-.grid-block.resume{
+.grid-block.capstone{
+  text-align: center;
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
@@ -175,8 +186,8 @@ li.top-link.is-active {
 }
 .grid-content li {
   background-color: #F89406;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 20px;
   color: white;
   font-size: 1.2em;
@@ -197,6 +208,18 @@ li.top-link.is-active {
   background-color:#283548 ;
 }
 
+.grid-block.email {
+  margin-bottom: 15px;
+  & a {
+      font-size: 2.2em;
+      color: #356AC3;
+  }
+  & a:hover {
+    color: white;
+  }
+}
+
+
 li.top-link {
   border-top: 2px solid #356AC3;
 }
@@ -216,8 +239,8 @@ a.home-link {
   text-align: center;
   & h3{
       background-color: #F89406;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       padding-left: 20px;
       padding-right: 20px;
       font-size: 1.2em;

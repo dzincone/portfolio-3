@@ -19,10 +19,18 @@
       <div class="align-left grid-block">
         <div class="grid-block large-3 vertical shrink">
           <div class="align-center grid-block shrink">
-            <div class="align-center grid-block profile-pic large-10">
-              
+            <div class="align-center grid-block profile-pic large-9">
+
             </div>
           </div>
+            <div class="align-spaced grid-block email shrink">
+              <div class="align-center grid-block shrink">
+                <a zf-toggle="contactMe"  href="#"><i class="fa fa-envelope-o"></i></a>
+              </div>
+              <div class="align-center grid-block shrink">
+                <a href="#"><i class="fa fa-file-text-o" target="_blank"></i></a>
+              </div>
+            </div>
             <div class="grid-block menu">
               <div class="text-left grid-content">
                 <a ui-sref="home" ui-sref-active="is-active" class="home-link"><h3>Home</h3></a>
@@ -49,13 +57,17 @@
             <div class="center title">Contact Me</div>
             <span zf-close="" class="right"><a>Cancel</a></span>
           </div>
-          <div class="grid-content padding" style="padding-top: 1rem;">
+          <div class="grid-content modal-content">
             <p>
               <label>Name</label>
               <input type="text">
               <br>
               <label>Email</label>
               <input type="email">
+              <br>
+              <label>Message</label>
+              <textarea>
+              </textarea>
             </p>
             <a zf-close="" class="button">OK</a>
             <a zf-close="" class="button">Cancel</a>
