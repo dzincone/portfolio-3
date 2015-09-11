@@ -6401,7 +6401,8 @@ blockquote p {
 
 body, html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #283548; }
 
 h1 {
   font-size: 5em;
@@ -6427,7 +6428,7 @@ li {
   .grid-block.home h1, .grid-block.home p, .grid-block.home h3 {
     color: white; }
   .grid-block.home h1.home-title {
-    font-size: 5em;
+    font-size: 6em;
     color: #F89406; }
 
 .grid-block.main-home {
@@ -6445,6 +6446,9 @@ li {
 
 .grid-block.content {
   margin-top: 20px; }
+
+.grid-block.content-home {
+  margin-top: 80px; }
 
 li.top-link.is-active {
   background-color: #356AC3; }
@@ -6560,6 +6564,24 @@ li.top-link {
 
 .button:hover {
   background-color: #356AC3; }
+
+a.home-link {
+  text-align: center; }
+  a.home-link h3 {
+    background-color: #F89406;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+    border-right: 2px solid #356AC3;
+    color: #356AC3;
+    background-color: white;
+    margin-bottom: 0; }
+
+a.home-link h3:hover {
+  background-color: #356AC3;
+  color: white; }
 
 a.button.contact {
   background-color: #356AC3; }
