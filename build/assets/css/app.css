@@ -6450,6 +6450,11 @@ li {
 .grid-block.content-home {
   margin-top: 80px; }
 
+.grid-block.profile-pick {
+  height: 120px;
+  background-image: url("./../img/dylan.png");
+  background-size: cover; }
+
 li.top-link.is-active {
   background-color: #356AC3; }
 
@@ -6606,19 +6611,22 @@ a.button.portfolio {
   height: 280px;
   background-image: url("./../img/lyne-up.png");
   background-size: cover;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border: 2px solid orange; }
 
 .grid-block.pingpong-app {
   height: 280px;
   background-image: url("./../img/ping-pong.png");
   background-size: cover;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border: 2px solid orange; }
 
 .grid-block.funfinder-app {
   height: 280px;
   background-image: url("./../img/fun-finder.png");
   background-size: cover;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border: 2px solid orange; }
 
 .items p {
   color: white; }
