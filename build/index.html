@@ -67,18 +67,20 @@
           </div>
           <div class="grid-content modal-content">
             <p>
-              <label>Name</label>
-              <input type="text">
-              <br>
-              <label>Email</label>
-              <input type="email">
-              <br>
-              <label>Message</label>
-              <textarea>
-              </textarea>
+              <form action="http://localhost:3000/api/email" method="post">
+                <label>Name</label>
+                <input type="text" name="name" ng-model="name">
+                <br>
+                <label>Email</label>
+                <input type="email" name="email" ng-model="email">
+                <br>
+                <label>Message</label>
+                <textarea name="text" ng-model="text">
+                </textarea>
+                <button class="button" type="submit">Submit</button>
+                <a zf-close="" class="button">Cancel</a>
+              </form>
             </p>
-            <a zf-close="" class="button">OK</a>
-            <a zf-close="" class="button">Cancel</a>
           </div>
         </div>
       </div>
