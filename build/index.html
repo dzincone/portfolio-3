@@ -32,11 +32,9 @@
             </p>
           </div>
             <div class="align-spaced grid-block email shrink">
+            
               <div class="align-center grid-block shrink">
-                <a zf-toggle="contactMe"  href="#"><i class="fa fa-envelope-o"></i></a>
-              </div>
-              <div class="align-center grid-block shrink">
-                <a href="https://resume.creddle.io/resume/gig5x674yb0"><i class="fa fa-file-text-o" target="_blank"></i></a>
+                <a zf-toggle="contactMe" href="#"><i class="fa fa-file-text-o"></i></a>
               </div>
             </div>
             <div class="grid-block menu">
@@ -62,25 +60,13 @@
       <div zf-modal="" id="contactMe" class="collapse">
         <div class="grid-block vertical">
           <div class="primary title-bar">
-            <div class="center title">Contact Me</div>
+            <div class="center title">Resume</div>
             <span zf-close="" class="right"><a>Cancel</a></span>
           </div>
-          <div class="grid-content modal-content">
-            <p>
-              <form action="http://localhost:3000/api/email" method="post">
-                <label>Name</label>
-                <input type="text" name="name" ng-model="name">
-                <br>
-                <label>Email</label>
-                <input type="email" name="email" ng-model="email">
-                <br>
-                <label>Message</label>
-                <textarea name="text" ng-model="text">
-                </textarea>
-                <button class="button" type="submit">Submit</button>
-                <a zf-close="" class="button">Cancel</a>
-              </form>
-            </p>
+          <div class="align-center grid-content modal-content">
+            <div class="align-center grid-block">
+              <iframe src="https://resume.creddle.io/embed/gig5x674yb0" width="900px" height="600px" seamless></iframe>
+            </div>
           </div>
         </div>
       </div>
