@@ -1,5 +1,7 @@
 {
+  "root": "./build",
   "routes": {
     "/**": "index.html"
-  }
+  },
+  "name": "zincone-portfolio"
 }
