@@ -1,7 +1,6 @@
 # Foundation for Apps Template
 
-Updated readme
-Adding video background
+Coming soon!
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-apps-template/dev-status.svg)](https://david-dm.org/zurb/foundation-apps-template#info=devDependencies)
 
