@@ -142,6 +142,13 @@ li.top-link.is-active {
   height: 100vh;
 }
 
+.grid-block.road-trip{
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 100vh;
+}
+
 .grid-block.capstone{
   text-align: center;
   margin-top: 20px;
@@ -305,6 +312,15 @@ a.button.portfolio {
 }
 
 .grid-block.lyneup-app {
+  height: 280px;
+  background-image: url('./../img/lyne-up.png');
+  background-size: cover;
+  margin-bottom: 10px;
+  border: 2px solid orange;
+
+}
+
+.grid-block.roadtrip-app {
   height: 280px;
   background-image: url('./../img/lyne-up.png');
   background-size: cover;
